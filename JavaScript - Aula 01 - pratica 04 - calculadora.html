@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Calculadora</title>
+	</head>
+    <body>
+        <h2>Calculadora Simples</h2>
+        <p>Esta calculadora executa uma soma de dois valores inteiros.</p>
+        <form>
+                Valor 1: <input type="number" id="val1"><br>
+                Valor 2: <input type="number" id="val2"><br><br>
+                <input type="button" value="executa" onclick="calcular()">
+                <input type="reset" value="Limpar"><br><br>
+                Resultado: <p id="result"></p>
+        </form>
+
+        <script>
+                function calcular() {
+                        var v1 = document.getElementById("val1").value; 
+                        var v2 = document.getElementById("val2").value; 
+                        var soma = parseInt(v1) + parseInt(v2); 
+                        document.getElementById("result").innerHTML = soma;
+                }
+                </script>
+        </body>
+</html>
